@@ -1,4 +1,5 @@
 #include "dog.h"
+#include <stdlib.h>
 
 /**
  * _strlen - a function that returns
@@ -8,16 +9,16 @@
  */
 int _strlen(char *s)
 {
-        int q;
+	int q;
 
-        q = 0;
+	q = 0;
 
-        while (s[q] != '\0')
-        {
-                q++;
-        }
+	while (s[q] != '\0')
+	{
+		q++;
+	}
 
-        return (q);
+	return (q);
 }
 
 /**
@@ -31,9 +32,9 @@ int _strlen(char *s)
  */
 char *_strcpy(char *dest, char *src)
 {
-        int len, q;
+	int len, q;
 
-        len = 0;
+	len = 0;
 	while (src[len] != '\0')
 	{
 		len++;
