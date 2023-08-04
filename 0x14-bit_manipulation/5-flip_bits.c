@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * flip_bits - returns the number of bits you would
@@ -10,13 +12,13 @@
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	unsigned int nbits;
+	unsigned int cbits;
 
-	for (nbits = 0; n || m; n >>= 1, m >>= 1)
+	for (cbits = 0; n || m; n >>= 1, m >>= 1)
 	{
 		if ((n & 1) != (m & 1))
-			nbits++;
+			cbits++;
 	}
 
-	return (nbits);
+	return (cbits);
 }

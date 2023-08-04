@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * get_endianness - checks the endianness
@@ -7,11 +9,11 @@
  */
 int get_endianness(void)
 {
-	unsigned int x;
-	char *c;
+	unsigned int q;
+	char *r;
 
-	x = 1;
-	c = (char *) &x;
+	q = 1;
+	r = (char *) &q;
 
-	return ((int)*c);
+	return ((int)*r);
 }
